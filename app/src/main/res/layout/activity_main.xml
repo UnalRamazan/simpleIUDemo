@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnSingIn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/personName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:ems="10"
+        android:hint="User's Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        android:importantForAutofill="no"
+        android:background="@drawable/edittextbackground"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/account"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="387dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="180dp"
+        android:text="Let's Code World Of Tomorrow"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/companyFoto"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/companyFoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/personName"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/personName"
+        app:layout_constraintTop_toBottomOf="@+id/personName"
+        tools:ignore="TouchTargetSizeCheck"
+        android:background="@drawable/edittextbackground"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/mail"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/emailAddress"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/emailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddress"
+        tools:ignore="TouchTargetSizeCheck"
+        android:autofillHints=""
+        android:background="@drawable/edittextbackground"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"/>
+
+    <Button
+        android:id="@+id/bSingIn"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/editSingInButtonText"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/bForgetPassword"
+        android:layout_width="402dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/editPasswordButtonText"
+        app:layout_constraintEnd_toEndOf="@+id/bSingIn"
+        app:layout_constraintStart_toStartOf="@+id/bSingIn"
+        app:layout_constraintTop_toBottomOf="@+id/bSingIn" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/companyFoto"
+        android:layout_width="162dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toTopOf="@+id/personName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33"
+        app:srcCompat="@drawable/_0201216_212118" />
+
+    <Button
+        android:id="@+id/bSingUp"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/editSingUpButtonText"
+        app:layout_constraintEnd_toEndOf="@+id/bSingIn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bSingIn"
+        app:layout_constraintTop_toBottomOf="@+id/bSingIn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">doftdare company</string>
+    <string name="editNameText">Enter Your Name</string>
+    <string name="editMailText">Enter Your Mail</string>
+    <string name="editPasswordText">Enter Your Password</string>
+    <string name="editSingInButtonText">Sıng In</string>
+    <string name="editSingUpButtonText">Sıng Up</string>
+    <string name="editPasswordButtonText">Forget Password</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainWelcomeMenu">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="159dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/welcomeBtnSingOut"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:text="Sıgn Out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomePassword" />
+
+    <TextView
+        android:id="@+id/welcomeUserInfo"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="56dp"
+        android:text="User's Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/welcomeMailInfo"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:text="Mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeUserInfo"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/welcomePassword"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:text="Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMailInfo"
+        android:padding="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="205dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/android" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
